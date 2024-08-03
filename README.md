@@ -42,11 +42,11 @@ To get a local copy up and running, follow these simple steps:
 
 1. Clone the repository
    ```sh
-   git clone https://github.com/Himansu173/limeroad_clone.com.git
+   git clone https://github.com/Himansu173/Blooming-Care.git
    ```
 2. Navigate to the project directory
    ```sh
-   cd limeroad_clone
+   cd Blooming-Care
    ```
 3. Install dependencies
    ```sh
@@ -90,7 +90,7 @@ This project is licensed under the MIT License. See the `LICENSE` file for detai
 
 - Name - Himansu Sekhar Lenka
 - Mail - himansu.lenka173@gmail.com
-- Project Link: [https://github.com/Himansu173/limeroad_clone](https://github.com/Himansu173/limeroad_clone.com.git)
+- Project Link: [https://github.com/Himansu173/limeroad_clone](https://github.com/Himansu173/Blooming-Care.git)
 
 ---
 
