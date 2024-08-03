@@ -2,6 +2,17 @@
 
 Welcome to Blooming Care, your ultimate resource for plant care, benefits, and gardening tips. Whether you're a seasoned gardener or just starting, our website provides everything you need to nurture your plants and create a thriving garden.
 
+## Table of Contents
+
+- [Features](#features)
+- [Usage](#usage)
+- [Installation](#installation)
+- [How To Use](#How-To-Use)
+- [Technologies Used](#technologies-used)
+- [Contributing](#contributing)
+- [License](#license)
+- [Contact Me](#contact)
+
 ## Features
 
 - **Home Page:** 
@@ -53,7 +64,7 @@ To get a local copy up and running, follow these simple steps:
    npm install
    ```
 
-## Usage
+## How To Use
 
 1. Start the development server
    ```sh
