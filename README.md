@@ -101,7 +101,7 @@ This project is licensed under the MIT License. See the `LICENSE` file for detai
 
 - Name - Himansu Sekhar Lenka
 - Mail - himansu.lenka173@gmail.com
-- Project Link: [https://github.com/Himansu173/limeroad_clone](https://github.com/Himansu173/Blooming-Care.git)
+- Project Link: [https://github.com/Himansu173/Blooming-Care](https://github.com/Himansu173/Blooming-Care.git)
 
 ---
 
