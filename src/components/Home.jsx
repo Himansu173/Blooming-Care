@@ -11,7 +11,7 @@ function Home() {
   const navigate = useNavigate();
 
   const loadData = async () => {
-    let res = await fetch(`http://localhost:3000/plants?_page=${page}&_per_page=12`);
+    let res = await fetch(`http://localhost:3000/plants?_page=${page}&_per_page=16`);
     setPlants(await res.json());
 
   }
@@ -30,7 +30,7 @@ function Home() {
             <Button mr={'50px'} p={"5px 15px"} borderRadius={"20px"} border={"1px solid"} onClick={() => navigate('/contact')}>Contact us</Button>
             <WrapItem>
               <Link to={'/profile'}>
-                <Avatar name='Dan Abrahmov' src={'https://images.unsplash.com/photo-1500648767791-00dcc994a43e?ixlib=rb-1.2.1&q=80&fm=jpg&crop=faces&fit=crop&h=200&w=200&ixid=eyJhcHBfaWQiOjE3Nzg0fQ'} />
+                <Avatar name='Dan Abrahmov' src={'https://bit.ly/prosper-baba'} />
               </Link>
             </WrapItem>
           </Flex>
