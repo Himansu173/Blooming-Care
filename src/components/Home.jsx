@@ -7,13 +7,15 @@ import { useEffect, useState } from "react"
 function Home() {
 
   const [plants, setPlants] = useState(null);
-  const [page, setPage] = useState(1);
+  const [page, setPage] = useState(0);
   const navigate = useNavigate();
 
   const loadData = async () => {
-    let res = await fetch(`http://localhost:3000/plants?_page=${page}&_per_page=16`);
+    let res = await fetch(`https://booming-care-data.onrender.com/plants?_start=${page * 16}&_limit=16`);
+    // console.log(await res.json());
+    console.log(res);
     setPlants(await res.json());
-
+    console.log(plants);
   }
 
   useEffect(() => {
@@ -52,7 +54,7 @@ function Home() {
         <Text fontSize={'2rem'}>Featured Product</Text>
         <Grid templateColumns='repeat(4, 1fr)' bg={'#CCC2B6'} gap={1} p={1} mt={'3%'}>
           {plants &&
-            plants.data.map((ele) => (
+            plants.map((ele) => (
               <Link key={ele.id} to={`/description/${ele.id}/${ele.common_name.replaceAll(/ /g, '')}`} style={{ cursor: 'default' }}>
                 <Flex w='100%' h='10rem' bg='#fff7eb' alignItems={'center'} justifyContent={'space-around'} p={'3%'} overflow={'hidden'} >
                   <Image src={ele.image_url} />
@@ -63,9 +65,9 @@ function Home() {
           }
         </Grid>
         {plants && <Flex justifyContent={'right'} alignItems={'center'} mt={4}>
-          <Button bg={'transparent'} _hover={{ bg: "transparent" }} onClick={() => setPage(page - 1)} isDisabled={plants.prev == null}>&lt; Previous</Button>
-          <Box fontSize={'1.2rem'}>{page}</Box>
-          <Button bg={'transparent'} _hover={{ bg: "transparent" }} onClick={() => setPage(page + 1)} isDisabled={plants.next == null}>Next &gt;</Button>
+          <Button bg={'transparent'} _hover={{ bg: "transparent" }} onClick={() => setPage(page - 1)} isDisabled={page == 0}>&lt; Previous</Button>
+          <Box fontSize={'1.2rem'}>{page+1}</Box>
+          <Button bg={'transparent'} _hover={{ bg: "transparent" }} onClick={() => setPage(page + 1)} isDisabled={page == 2}>Next &gt;</Button>
         </Flex>}
       </Box>
     </>

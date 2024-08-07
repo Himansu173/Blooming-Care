@@ -9,7 +9,7 @@ function Description() {
     const navigate = useNavigate();
 
     const loadData = async () => {
-        let res = await fetch(`http://localhost:3000/plants/${id}`);
+        let res = await fetch(`https://booming-care-data.onrender.com/plants/${id}`);
         setPlant(await res.json());
     }
 

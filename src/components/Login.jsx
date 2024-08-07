@@ -4,6 +4,7 @@ import { eyeOff } from 'react-icons-kit/feather/eyeOff';
 import { eye } from 'react-icons-kit/feather/eye'
 import Icon from "react-icons-kit";
 import { Link, useNavigate } from "react-router-dom";
+import LoginImg from '../assets/Login in page image.png'
 
 function Login() {
     const [password, setPassword] = useState("");
@@ -44,7 +45,7 @@ function Login() {
                 >
                     <Flex bg={"#CCC2B6"} height={"100%"} w={"45%"} alignItems={"flex-end"} justifyContent={"center"} >
                         <Image
-                            src={'./src/assets/Login in page image.png'}
+                            src={LoginImg}
                             h={"300px"}
                         />
                     </Flex>
