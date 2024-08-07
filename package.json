@@ -1,22 +1,23 @@
 {
-  "name": "BloomingCare",
+  "homepage": "https://himansu173.github.io/Blooming-Care/",
+  "name": "plant",
   "private": true,
   "version": "0.0.0",
   "type": "module",
   "scripts": {
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d dist",
     "dev": "vite",
     "build": "vite build",
     "lint": "eslint . --ext js,jsx --report-unused-disable-directives --max-warnings 0",
     "preview": "vite preview",
     "start": "vite",
-    "json-server": "json-server --watch db.json --port 5000"
+    "json-server": "json-server --watch db.json --port 3000"
   },
   "dependencies": {
     "@chakra-ui/react": "^2.8.2",
     "@emotion/react": "^11.13.0",
     "@emotion/styled": "^11.13.0",
-    "Blooming-Care": "file:",
-    "BloomingCare": "file:",
     "framer-motion": "^11.3.21",
     "plant": "file:",
     "react": "^18.3.1",
