@@ -94,7 +94,7 @@ function Description() {
                             </Card>
                         </Box>
                         <Box w={'40%'} p={'40px'}>
-                            <Image src={imageSrc} h={'350px'} />
+                            <Image src={imageSrc} h={'350px'} alt='img'/>
                         </Box>
                     </Flex>
                 }
